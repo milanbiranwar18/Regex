@@ -16,7 +16,7 @@ else
 
 
 //UC2
-Console.WriteLine("Please Enter Email");
+Console.WriteLine("Please Enter Last Name");
 string lastname = Console.ReadLine();
 
 bool last = patterns.validateFirstName(lastname);
@@ -27,7 +27,7 @@ else
 
 
 //UC3
-Console.WriteLine("Please Enter Last Name");
+Console.WriteLine("Please Enter Email");
 string email = Console.ReadLine();
 
 bool mail = patterns.validateFirstName(email);
