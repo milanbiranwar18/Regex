@@ -24,3 +24,14 @@ if (last)
     Console.WriteLine("Pattern Matched");
 else
     Console.WriteLine("Pattern Not Matched");
+
+
+//UC3
+Console.WriteLine("Please Enter Last Name");
+string email = Console.ReadLine();
+
+bool mail = patterns.validateFirstName(email);
+if (mail)
+    Console.WriteLine("Pattern Matched");
+else
+    Console.WriteLine("Pattern Not Matched");
