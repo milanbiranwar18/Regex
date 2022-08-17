@@ -34,7 +34,13 @@ namespace RegexAssignment
             return Regex.IsMatch(MobileNumber, RegexMobileNumber);
         }
 
-        
+        public static string RegexPassword = "^[a-zA-Z]{8,}$";
+        public bool validatePassword(string Password)
+        {
+            return Regex.IsMatch(Password, RegexPassword);
+        }
+
+
     }
 }
 
