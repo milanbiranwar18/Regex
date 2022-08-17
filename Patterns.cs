@@ -21,6 +21,13 @@ namespace RegexAssignment
             return Regex.IsMatch(LastName, RegexLastName);
 
         }
+
+        public static string RegexEmail = "^[0-9a-zA-Z]+([+#%&_.][a-zA-Z0-9]+)*[@]{1}[a-zA-Z]{2,}[.][a-zA-Z]{2,3}([.][a-zA-Z]{2})?$";
+        public bool validateEmail(string Email)
+        {
+            return Regex.IsMatch(Email, RegexEmail);
+        }
+
     }
 }
 
