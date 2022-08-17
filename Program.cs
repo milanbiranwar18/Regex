@@ -90,4 +90,16 @@ else
     Console.WriteLine("Pattern Not Matched");
 
 
+//UC9
+Console.WriteLine("Please Enter Mobile Number");
+string emailId = Console.ReadLine();
+
+bool mailId = patterns.validatePassword6(emailId);
+if (mailId)
+    Console.WriteLine("Pattern Matched");
+else
+    Console.WriteLine("Pattern Not Matched");
+
+
+
 
