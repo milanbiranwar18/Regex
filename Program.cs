@@ -78,3 +78,16 @@ if (passwo)
 else
     Console.WriteLine("Pattern Not Matched");
 
+
+//UC8
+Console.WriteLine("Please Enter Mobile Number");
+string password8 = Console.ReadLine();
+
+bool passwor = patterns.validatePassword6(password8);
+if (passwor)
+    Console.WriteLine("Pattern Matched");
+else
+    Console.WriteLine("Pattern Not Matched");
+
+
+
