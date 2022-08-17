@@ -19,7 +19,7 @@ else
 Console.WriteLine("Please Enter Last Name");
 string lastname = Console.ReadLine();
 
-bool last = patterns.validateFirstName(lastname);
+bool last = patterns.validateLastName(lastname);
 if (last)
     Console.WriteLine("Pattern Matched");
 else
@@ -30,7 +30,7 @@ else
 Console.WriteLine("Please Enter Email");
 string email = Console.ReadLine();
 
-bool mail = patterns.validateFirstName(email);
+bool mail = patterns.validateEmail(email);
 if (mail)
     Console.WriteLine("Pattern Matched");
 else
