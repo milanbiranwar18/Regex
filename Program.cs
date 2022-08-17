@@ -16,7 +16,7 @@ else
 
 
 //UC2
-Console.WriteLine("Please Enter Last Name");
+Console.WriteLine("Please Enter Email");
 string lastname = Console.ReadLine();
 
 bool last = patterns.validateFirstName(lastname);
