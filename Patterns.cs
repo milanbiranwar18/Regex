@@ -25,9 +25,16 @@ namespace RegexAssignment
         public static string RegexEmail = "^[0-9a-zA-Z]+([+#%&_.][a-zA-Z0-9]+)*[@]{1}[a-zA-Z]{2,}[.][a-zA-Z]{2,3}([.][a-zA-Z]{2})?$";
         public bool validateEmail(string Email)
         {
-            return Regex.IsMatch(Email, RegexEmail);
+            return Regex.IsMatch(Email, RegexEmail);                  //checking   abc.xyz @bl.co.in
         }
 
+        public static string RegexMobileNumber = "^[1-9]{2}[6-9]{1}[0-9]{9}$";
+        public bool validateMobileNumber(string MobileNumber)
+        {
+            return Regex.IsMatch(MobileNumber, RegexMobileNumber);
+        }
+
+        
     }
 }
 
