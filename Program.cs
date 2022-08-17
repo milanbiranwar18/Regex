@@ -46,3 +46,13 @@ if (mob)
     Console.WriteLine("Pattern Matched");
 else
     Console.WriteLine("Pattern Not Matched");
+
+//UC5
+Console.WriteLine("Please Enter Mobile Number");
+string password = Console.ReadLine();
+
+bool pass = patterns.validatePassword(password);
+if (pass)
+    Console.WriteLine("Pattern Matched");
+else
+    Console.WriteLine("Pattern Not Matched");
