@@ -9,12 +9,14 @@ namespace RegexAssignment
 {
     internal class Patterns
     {       
+        //UC1
         public static string RegexFirstName = "^[A-Z]{1,}[a-z]{2,}$";
         public bool validateFirstName(string FirstName)
         {
             return Regex.IsMatch(FirstName, RegexFirstName);
         }
 
+        //UC2
         public static string RegexLastName = "^[A-Z]{1,}[a-z]{3,}$";
         public bool validateLastName(string LastName)
         {
@@ -22,28 +24,39 @@ namespace RegexAssignment
 
         }
 
+        //UC3
         public static string RegexEmail = "^[0-9a-zA-Z]+([+#%&_.][a-zA-Z0-9]+)*[@]{1}[a-zA-Z]{2,}[.][a-zA-Z]{2,3}([.][a-zA-Z]{2})?$";
         public bool validateEmail(string Email)
         {
             return Regex.IsMatch(Email, RegexEmail);                  //checking   abc.xyz @bl.co.in
         }
 
+        //UC4
         public static string RegexMobileNumber = "^[1-9]{2}[6-9]{1}[0-9]{9}$";
         public bool validateMobileNumber(string MobileNumber)
         {
             return Regex.IsMatch(MobileNumber, RegexMobileNumber);
         }
 
+        //UC5
         public static string RegexPassword = "^[a-zA-Z]{8,}$";
         public bool validatePassword(string Password)
         {
             return Regex.IsMatch(Password, RegexPassword);
         }
 
+        //UC6
         public static string RegexPassword6 = "^[A-Z]{1,}[a-z]{7,}$";
         public bool validatePassword6(string Password6)
         {
             return Regex.IsMatch(Password6, RegexPassword6);
+        }
+
+        //UC7
+        public static string RegexPassword7 = "^[A-Z]{1,}[a-z]{5,}[0-9]{1,}$";
+        public bool validatePassword7(string Password7)
+        {
+            return Regex.IsMatch(Password7, RegexPassword7);
         }
 
 
