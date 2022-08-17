@@ -19,7 +19,7 @@ else
 Console.WriteLine("Please Enter Last Name");
 string lastname = Console.ReadLine();
 
-bool last = patterns.validateFirstName(lastname);
+bool last = patterns.validateLastName(lastname);
 if (last)
     Console.WriteLine("Pattern Matched");
 else
@@ -27,11 +27,22 @@ else
 
 
 //UC3
-Console.WriteLine("Please Enter Last Name");
+Console.WriteLine("Please Enter E-mail");
 string email = Console.ReadLine();
 
-bool mail = patterns.validateFirstName(email);
+bool mail = patterns.validateEmail(email);
 if (mail)
+    Console.WriteLine("Pattern Matched");
+else
+    Console.WriteLine("Pattern Not Matched");
+
+
+//UC4
+Console.WriteLine("Please Enter Mobile Number");
+string mobile = Console.ReadLine();
+
+bool mob = patterns.validateMobileNumber(mobile);
+if (mob)
     Console.WriteLine("Pattern Matched");
 else
     Console.WriteLine("Pattern Not Matched");
